@@ -39,21 +39,28 @@ body {
   font-size: 1.4rem;
   padding: 1rem 1.5rem;
 }
-
-main .container {
-  margin: 0 auto;
+main {
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
-  justify-items: center;
-  gap: 5rem;
 }
+
+main .container {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-items: center;
+  justify-content: center;
+  width: 65%;
+  gap: 7rem;
+}
+
 main .container .info {
   display: flex;
-  gap: 1rem;
-  width: 60%;
+  gap: 2rem;
   margin-top: 5rem;
+  width: 100%;
 }
 
 main .container .info .desc {
@@ -73,9 +80,9 @@ main .container .info .desc p {
 }
 
 main .container .info .desc a {
-  width: fit-content;
   text-align: center;
   padding: 1rem 4.5rem;
+  width: 10%;
 }
 
 main .container .info .imgs {
@@ -88,11 +95,11 @@ main .container .info .imgs img {
 }
 
 main .container .services {
-  width: 60%;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 1rem;
+  gap: 2rem;
+  width: 100%;
 }
 main .container .services h2 {
   font-size: 2.5rem;
@@ -100,30 +107,37 @@ main .container .services h2 {
 main .container .services p {
   font-size: 1.1rem;
 }
-
 main .container .services .row {
   display: flex;
   flex-direction: row;
-  gap: 1rem;
+  gap: 1.2rem;
 }
+
 main .container .services .row div {
   flex: 1;
   background-color: #163342;
   color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
-main .container .services .row div span{
-    height: 250px;
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    text-align: center;
+
+main .container .services .row div span {
+  flex: 2;
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
 }
 main .container .services .row div span img {
   width: 100%;
+  height: auto;
 }
+
 main .container .services .row div .content {
-  margin-top: 1rem;
-  padding: 1.2rem;
+  padding: 2rem 1.2rem;
+  flex: 1;
   display: flex;
   flex-direction: column;
   gap: 1rem;
@@ -140,121 +154,134 @@ main .container .services .row div .content a {
   width: 25%;
   font-size: 1.2rem;
 }
+
 main .container .tiles {
-    display: flex;
-    gap: 2rem;
-    width: 60%;
-    height:450px;
+  display: flex;
+  gap: 2rem;
+  height: 450px;
+  width: 100%;
 }
-main .container .tiles .kweb{
-    background-image: url(/img/e18f6a7d1a1347649721e9f77c64c7d1.jpeg);
-}
-main .container .tiles .sporing{
-    background-image: url(/img/37db814df7242d89bcea340298393c0a.jpeg);
-}
-main .container .tiles div{
-    flex: 1;
-    height: 100%;
+main .container .tiles div {
+  flex: 1;
+  height: 100%;
+  width: 100%;
 
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 
-    overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-content: center;
 }
-
-main .container .tiles div .content{
-    display: flex;
-    flex-direction: column;
-    background-color: #11033181;
-    gap: 1.3rem;
-    padding-left: 2rem;
-    color: white;
+main .container .tiles .kweb {
+  background-image: url(/img/e18f6a7d1a1347649721e9f77c64c7d1.jpeg);
 }
-main .container .tiles div .content h3{
-    margin-top: 2rem;
-    font-size: 2.5rem;
-}
-main .container .tiles div .content p{
-    width: 75%;
-}
-main .container .tiles div .content a{
-    padding: 0.5rem 1.5rem;
-    width: 10%;
+main .container .tiles .sporing {
+  background-image: url(/img/37db814df7242d89bcea340298393c0a.jpeg);
 }
 
-main .container .sponsors{
-    width: 60%;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    margin-bottom: 2rem;
+main .container .tiles div .content {
+  height: 100%;
+  width: 100%;
+
+  box-sizing: border-box;
+  padding: 2rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 1rem;
+  background-color: #11033181;
+  color: white;
 }
-main .container .sponsors h3{
-    font-size: 2.5rem;
+
+main .container .tiles div .content  h3 {
+  font-size: 2.5rem;
 }
-main .container .sponsors p{
-    font-size: 1.1rem;
-    width: 50%;
+main .container .tiles div .content  p {
+  width: 75%;
 }
-main .container .sponsors div{
-    display: flex;
-    gap: 1.5rem;
-    align-items: center;
-    justify-content: center;
-    max-height: 250px;
+main .container .tiles div .content  a {
+  padding: 0.5rem 1.5rem;
+  width: 10%;
 }
-main .container .sponsors div span{
-    flex: 1;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+
+main .container .sponsors {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
 }
-main .container .sponsors div span img{
-    width: 100%;
+main .container .sponsors h3 {
+  font-size: 2.5rem;
 }
+main .container .sponsors p {
+  font-size: 1.1rem;
+  width: 50%;
+}
+main .container .sponsors div {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  justify-content: center;
+}
+
+main .container .sponsors div span {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+main .container .sponsors div span img {
+  width: 100%;
+  height: auto;
+}
+
 .pageFooter {
-    width: 100vw;
-    height: 250px;
-    display: flex;
+  width: 100vw;
+  height: 250px;
+  display: flex;
 
-    flex-direction: column;
-    justify-content: start;
-    align-items: center;
-    gap: 2rem;
-    margin-top: 5rem;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 10rem;
 
-    padding-top: 3rem;
-    background-color: #e7342c;
-    color: white;
+  padding-top: 3rem;
+  background-color: #e7342c;
+  color: white;
 }
-.pageFooter h4{
-    font-size: 2.7rem;
+.pageFooter h4 {
+  font-size: 2.7rem;
 }
-.pageFooter p{
-   width: 75%;
-   text-align: center;
+.pageFooter p {
+  width: 75%;
+  text-align: center;
 }
-.pageFooter div{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 2rem;
+.pageFooter div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
 }
-.pageFooter span{
-    flex: 1;
-    display: flex;
-    background-color: #163342;
-    padding: 0.8rem 2rem;
-    text-align: center
+.pageFooter span {
+  flex: 1;
+  display: flex;
+  background-color: #163342;
+  padding: 0.8rem 2rem;
+  text-align: center;
 }
-.pageFooter a{
-    width: 100%;
-    color:white;
-    text-decoration: none;
+.pageFooter a {
+  width: 100%;
+  color: white;
+  text-decoration: none;
 }
+
+/* Custom menue */
 
 /* Custom Classes */
 
@@ -278,9 +305,80 @@ main .container .sponsors div span img{
 }
 
 #fit-img {
-    max-height: 125px;
-    width: auto;
+  width: auto;
+  margin: 0 auto;
+
+  max-height: 200px;
 }
+
 .mt-2 {
   margin-top: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+  main .container {
+    width: 90%;
+  }
+
+  main .container .info {
+    flex-direction: column-reverse;
+  }
+  main .container .info .desc a {
+    width: 35%;
+    margin: 0 auto;
+  }
+
+  main .container .services h2 {
+    text-align: center;
+  }
+  main .container .services p {
+    text-align: center;
+  }
+  main .container .services .row {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+  }
+
+main .container .tiles {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  height: auto;
+}
+main .container .tiles div {
+  flex: auto;
+  height: 500px;
+}
+main .container .tiles .sporing .content {
+  align-items: flex-end;
+  justify-content: flex-end;
+  text-align: right;
+}
+
+main .container .sponsors {
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+main .container .sponsors h3{
+  text-align: center;
+}
+main .container .sponsors p{
+  text-align: center;
+  width: 90%;
+}
+main .container .sponsors div{
+  flex-direction: column;
+  gap: 2rem;
+}
+main .container .sponsors div span {
+
+}
+main .container .sponsors div span img {
+  width: auto;
+  height: 100%;
+  margin: 0 auto;
+}
+
 }
