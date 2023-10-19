@@ -210,9 +210,8 @@ main .container .sponsors div span{
 main .container .sponsors div span img{
     width: 100%;
 }
-
 .pageFooter {
-    width: 100%;
+    width: 100vw;
     height: 250px;
     display: flex;
 
