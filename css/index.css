@@ -7,6 +7,11 @@ body {
   overflow-x: hidden;
 }
 
+header  {
+  width: 100%;
+  height: auto;
+}
+
 /* Sections */
 .Welcome {
   width: 100vw;

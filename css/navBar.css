@@ -5,7 +5,6 @@ nav {
   left: 0;
 }
 nav .navBar{
-  padding: 0 1rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -23,21 +22,63 @@ nav .navBar ul{
   list-style: none;
   display: flex;
   gap: 1rem;
+  box-sizing: border-box;
 }
 nav .navBar li {
   text-align: center;
+  box-sizing: border-box;
 }
 nav .navBar li a{
   color: white;
   text-decoration: none;
   font-size: large;
+  width: 100%;
+  width: 100%;
+  display: block;
 }
-nav .navBar li #navKontakt{
+nav .navBar li #navKontakt a{
   margin-left: 1rem;
   padding: 0.5rem 1rem;
 }
 
 
-/* @media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
+  nav {
+    position: static;
+    background: #0c1c24;
+    height: auto;
+  }
+  nav .navBar{
+    flex-direction: column;
+    justify-content: space-between;
+  }
 
-} */
+  nav .navBar *{
+    width: 100%;
+  }
+
+  nav .navBar div{
+    text-align: center;
+    width: 100%;
+  }
+  nav .navBar div img{
+    max-width: 195px;
+    margin: 0 auto;
+  }
+
+  nav .navBar ul{
+    gap: 0rem;
+    flex-direction: column;
+    margin-bottom: 3rem;
+
+  }
+  nav .navBar li {
+    padding: 0.5rem 0;
+    padding:  1rem;
+  }
+
+  nav .navBar #navKontakt{
+    margin-left: 0;
+    background-color: #e7342c;
+  }
+}
