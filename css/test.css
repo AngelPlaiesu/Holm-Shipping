@@ -1,3 +1,11 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: black;
+}
+
 nav .navBar {
   height: auto;
   width: 100vw;
@@ -34,20 +42,20 @@ nav .navBar .links-container {
 nav .navBar .links-container span {
   text-align: center;
   color: white;
-  font-size: 1vw;
 }
 
 nav .navBar .links-container span a {
   color: white;
   text-decoration: none;
   font-size: large;
-  display: block;
   width: 100%;
-  font-size: 1vw;
+  width: 100%;
+  display: block;
 }
 
-#navKontakt  a{
+#navKontakt {
   padding: 0.6rem 1rem;
+  margin-left: 1rem;
 }
 
 @media screen and (max-width: 768px) {
@@ -78,16 +86,13 @@ nav .navBar .links-container span a {
   nav .navBar .links-container span {
     text-align: center;
     width: 100%;
-    font-size: 1rem;
   }
   nav .navBar .links-container span  a{
     width: 100%;
     display: block;
-    font-size: 1rem;
   }
-  #navKontakt  a{
 
-    padding: 1rem 0 ;
-    font-size: 1rem;
+  #navKontakt {
+    margin-left: 0;
   }
 }
